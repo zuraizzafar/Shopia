@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopia</title>
+    <link rel="stylesheet" href="assets/styles/index.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+        integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <link rel="shortcut icon" href="assets/images/fb-1.png" type="image/x-icon">
+    <script>
+        var drp = 0;
+        function drop() {
+            if (drp == 0) {
+                document.getElementById("drp").style.display = "block";
+                document.getElementById("nav-btn").className = "fas fa-times fa-2x"
+                drp = 1;
+            }
+            else {
+                document.getElementById("drp").style.display = "none";
+                document.getElementById("nav-btn").className = "fas fa-bars fa-2x"
+                drp = 0;
+            }
+        }
+        window.onscroll = function () {
+            if (pageYOffset >= 200) {
+                document.getElementById('link-top').style.visibility = "visible";
+            } else {
+                document.getElementById('link-top').style.visibility = "hidden";
+            }
+        };
+        // document.getElementById('link-top').onclick = function () {
+        //     scrollTo(document.body, 0, 0);
+        // }
+    </script>
+</head>
+
+<body>
+    <header>
+        <div class="bar" id="top">
+            <span id="phone">
+                <i class="fas fa-phone-alt"></i>
+                <span>Call +001 555 801</span>
+            </span>
+            <ul>
+                <li><a href="#">WELCOME MSG!</a></li>
+                <li><a href="#">MY ACCOUNT</a></li>
+                <li><a href="#">MY WHISLIST</a></li>
+                <li><a href="#">LOGIN</a></li>
+            </ul>
+        </div>
+        <nav>
+            <div>
+                <ul class="nav-bar">
+                    <li>
+                        <a href="#">Home</a>
+                    </li>
+                    <li>
+                        <a href="#">Gallery</a>
+                    </li>
+                    <li>
+                        <a href="#">Categories</a>
+                    </li>
+                    <li>
+                        <a href="#">Pages</a>
+                    </li>
+                </ul>
+            </div>
+            <div style="position: relative;">
+                <a href="" style=" text-decoration: none; color: black;">
+                    <h1>Shopia</h1>
+                </a>
+            </div>
+            <div>
+                <ul class="social">
+                    <li><a href="#"><img src="assets/images/fb.png" alt="fb"></a></li>
+                    <li><a href="#"><img src="assets/images/twitter.png" alt="twitter"></a></li>
+                    <li><a href="#"><img src="assets/images/pinterest.png" alt="pinterest"></a></li>
+                    <li><a href="#"><img src="assets/images/instagram.png" alt="instagram"></a></li>
+                    <li><button>Rupiah &#9660;</button></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <nav class="mbl-nav">
+        <a href="" style=" text-decoration: none; color: black;">
+            <h1>Shopia</h1>
+        </a>
+        <button onclick="drop()"><i id="nav-btn" class="fas fa-bars fa-2x"></i></button>
+        <ul id="drp">
+            <li>
+                <a href="#">Home</a>
+            </li>
+            <li>
+                <a href="#">Gallery</a>
+            </li>
+            <li>
+                <a href="#">Categories</a>
+            </li>
+            <li>
+                <a href="#">Pages</a>
+            </li>
+        </ul>
+    </nav>
+    <section>
+        <div class="banner">
+            <div class="sale">
+                <div>
+                    <h3>MID-SEASON</h3>
+                    <h2>SALE</h2>
+                    <h3 id="border">UP TO</h3>
+                    <span>50% OFF</span>
+                </div>
+                <button>SHOP NOW</button>
+            </div>
+        </div>
+        <div class="support">
+            <div class="g-1">
+                <div class="block">
+                    <i class="fas fa-plane inline-block fa-3x"></i>
+                    <div class="inline-block">
+                        <h2>Free Shipping</h2>
+                        <span>In Order Min $200</span>
+                    </div>
+                </div>
+            </div>
+            <div class="arrow-right"></div>
+            <div class="center-s">
+                <div class="inwards-left"></div>
+                <div class="g-2">
+                    <div class="block">
+                        <i class="far fa-clock fa-3x inline-block"></i>
+                        <div class="inline-block">
+                            <h2>30 DAYS RETURNS</h2>
+                            <span>Money Back Guarantee</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="inwards-right"></div>
+            </div>
+            <div class="arrow-left"></div>
+            <div class="g-3">
+                <div class="block">
+                    <i class="far fa-life-ring fa-3x"></i>
+                    <div class="inline-block">
+                        <h2>24/7 SUPPORT</h2>
+                        <span>Life Time Support</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="featured">
+            <h2>Hand Picked</h2>
+            <div class="pictures">
+                <div class="first">
+                    <div>
+                        <button>SHOP NOW</button>
+                        <img src="assets/images/shoes.jpg" alt="">
+                    </div>
+                    <div>
+                        <button>SHOP NOW</button>
+                        <img src="assets/images/jwellery.jpg" alt="">
+                    </div>
+                </div>
+                <div class="second">
+                    <div>
+                        <button>SHOP NOW</button>
+                        <img src="assets/images/paris-hilton.jpg" alt="" height="792px">
+                    </div>
+                </div>
+                <div class="third">
+                    <div>
+                        <button>SHOP NOW</button>
+                        <img src="assets/images/50off.jpg" alt="">
+                    </div>
+                    <div>
+                        <button>SHOP NOW</button>
+                        <img src="assets/images/wallet.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="recent">
+            <h2>Summer Collection</h2>
+            <div class="collection">
+                <div>
+                    <div id="overlay"></div>
+                    <span>20%</span>
+                    <div><button>+ Add to Cart</button></div>
+                    <img src="assets/images/1.jpg" alt="">
+                </div>
+                <div>
+                    <div id="overlay"></div>
+                    <div class="button"><button>+ Add to Cart</button></div>
+                    <img src="assets/images/2.jpg" alt="">
+                </div>
+                <div>
+                    <div id="overlay"></div>
+                    <div>
+                        <button>+ Add to Cart</button>
+                    </div>
+                    <img src="assets/images/3.jpg" alt="">
+                </div>
+                <div>
+                    <div id="overlay"></div>
+                    <span>40%</span>
+                    <div><button>+ Add to Cart</button></div>
+                    <img src="assets/images/4.jpg" alt="">
+                </div>
+                <div>
+                    <div id="overlay"></div>
+                    <span>20%</span>
+                    <div><button>+ Add to Cart</button></div>
+                    <img src="assets/images/5.jpg" alt="">
+                </div>
+                <div>
+                    <div id="overlay"></div>
+                    <div><button>+ Add to Cart</button></div>
+                    <img src="assets/images/6.jpg" alt="">
+                </div>
+                <div>
+                    <div id="overlay"></div>
+                    <div><button>+ Add to Cart</button></div>
+                    <img src="assets/images/7.jpg" alt="">
+                </div>
+                <div>
+                    <div id="overlay"></div>
+                    <span>40%</span>
+                    <div><button>+ Add to Cart</button></div>
+                    <img src="assets/images/8.jpg" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="brand">
+            <h2>Our Brand</h2>
+            <div class="brand-list">
+                <img src="assets/images/b-1.png">
+                <img src="assets/images/b-2.png">
+                <img src="assets/images/b-3.png">
+                <img src="assets/images/b-4.png">
+                <img src="assets/images/b-5.png">
+                <img src="assets/images/b-6.png">
+            </div>
+        </div>
+        <div class="feedback">
+            <h2 id="feed_h2">Customer Says</h2>
+            <div class="says">
+                <div class="absolute">
+                    <div class="first-c">
+                        <img src="assets/images/customer-1.png" alt="">
+                        <div>
+                            <span>
+                                Sed ut perspiciatis <br>
+                                unde omnis iste natus error sit <br>
+                                voluptatem accusantium doloremque
+                            </span>
+                            <h2>Sandra Dewi</h2>
+                            <h5>FASHION STYLISH</h5>
+                        </div>
+                    </div>
+                    <div class="second-c">
+                        <div>
+                            <span>
+                                Sed ut perspiciatis <br>
+                                unde omnis iste natus error sit <br>
+                                voluptatem accusantium doloremque
+                            </span>
+                            <h2>Shaheer Sheikh</h2>
+                            <h5>DESIGNER</h5>
+                        </div>
+                        <img src="assets/images/customer-2.png" alt="">
+                    </div>
+                </div>
+                <img id="feed_img" src="assets/images/feedback.jpg" alt="" width="100%" height="100%">
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div id="footer-div">
+            <div>
+                <h3>SHOPS</h3>
+                <ul>
+                    <li><a href="#">New In</a></li>
+                    <li><a href="#">Women</a></li>
+                    <li><a href="#">Men</a></li>
+                    <li><a href="#">Shoes</a></li>
+                    <li><a href="#">Bags & Accessories</a></li>
+                    <li><a href="#">Top Brands</a></li>
+                    <li><a href="#">Sales and Special Offers</a></li>
+                    <li><a href="#">Lookbook</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3>INFORMATION</h3>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Customer Service</a></li>
+                    <li><a href="#">New Collection</a></li>
+                    <li><a href="#">Best Sellers</a></li>
+                    <li><a href="#">Manufacturers</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms and Conditions</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3>CUSTOMER SERVICE</h3>
+                <ul>
+                    <li><a href="#">Search Terms</a></li>
+                    <li><a href="#">Advanced Search</a></li>
+                    <li><a href="#">Order and Returns</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">RSS</a></li>
+                    <li><a href="#">Help and FAQs</a></li>
+                    <li><a href="#">Consulant</a></li>
+                    <li><a href="#">Store Locations</a></li>
+                </ul>
+            </div>
+            <div id="stay-c">
+                <h3>STAY CONNECTED</h3>
+                <a href="#"><img src="assets/images/fb-1.png" alt=""></a>
+                <a href="#"><img src="assets/images/twitter-1.png" alt=""></a>
+                <a href="#"><img src="assets/images/instagram-1.png" alt=""></a>
+                <a href="#"><img src="assets/images/pinterest-1.png" alt=""></a>
+                <a href="#"><img src="assets/images/rss-1.png" alt=""></a>
+                <h3>SUBSCRIBE <span> in </span> OUR NEWS LETTER</h3>
+                <div class="news">
+                    <input type="text" placeholder="Enter Your Email Address"> <button>SUBSCRIBE</button>
+                </div>
+            </div>
+        </div>
+        <div class="bottom-footer">
+            <div>
+                <p>
+                    © 2015 Shopia Fashion Store Shopify.
+                    All Rights Reserved. Ecommerce Software by Shopify.
+                    Designed by MoccaLabs.comp
+                </p>
+                <img src="assets/images/cards.png" alt="cards" id="cards">
+            </div>
+            <a href="#top" id="link-top"><img src="assets/images/arrow.png" alt=""></a>
+            <div class="border-down"></div>
+        </div>
+    </footer>
+</body>
+
+</html>
